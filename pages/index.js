@@ -128,7 +128,7 @@ export default function Home() {
     }
   }
 
-  const getProivderOrSigner = async (needSigner = false) => {
+  const getProviderOrSigner = async (needSigner = false) => {
     const provider = await web3ModalRef.current.connect();
     const web3Provider = new providers.Web3Provider(provider);
     const { chainId } = await web3Provider.getNetwork();
